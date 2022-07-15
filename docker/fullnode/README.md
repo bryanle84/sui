@@ -40,6 +40,10 @@ docker-compose up
 ## Test
 
 Once the fullnode is up and running, test some of the JSON-RPC interfaces.
+- First you need to login to the container
+```
+docker exec -it `docker ps -lq` /bin/bash
+```
 
 - Get the five most recent transactions:
 
